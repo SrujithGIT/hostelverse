@@ -8,7 +8,7 @@ function ComplaintsManagement() {
   const fetchComplaints = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5001/api/complaints');
+      const response = await fetch('https://hostelverse-server.vercel.app/api/complaints');
       if (!response.ok) {
         throw new Error('Failed to fetch complaints');
       }
@@ -25,7 +25,7 @@ function ComplaintsManagement() {
   const handleStatusChange = async (complaintId, newStatus) => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:5001/api/complaints/${complaintId}`, {
+      const response = await fetch(`https://hostelverse-server.vercel.app/api/complaints/${complaintId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
