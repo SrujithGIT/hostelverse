@@ -9,7 +9,13 @@ const Leave = require('./models/Leave');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors(
+    {
+        origin : ["https://hostelverse-client.vercel.app"],
+        methods=["*"],
+        credentials=true
+    }
+));
 app.use(express.json());
 
 // Load environment variables
