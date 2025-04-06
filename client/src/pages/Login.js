@@ -35,8 +35,7 @@ function Login() {
 
     try {
       // Send login request to the server
-      const response = await fetch('https://hostelverse-server.vercel.app/api/login
-', {
+      const response = await fetch('https://hostelverse-server.vercel.app/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
