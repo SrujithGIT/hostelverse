@@ -22,7 +22,7 @@ function Complaints() {
     try {
       setIsLoading(true);
       setError(null);
-      const response = await fetch('http://localhost:5001/api/complaints/student/' + studentId);
+      const response = await fetch('https://hostelverse-server.vercel.app/api/complaints/student/' + studentId);
       if (!response.ok) {
         throw new Error('Failed to fetch complaints');
       }
