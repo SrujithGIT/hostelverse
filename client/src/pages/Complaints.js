@@ -82,7 +82,7 @@ function Complaints() {
 
       console.log('Submitting complaint:', complaintData);
 
-      const response = await fetch('http://localhost:5001/api/complaints', {
+      const response = await fetch('https://hostelverse-server.vercel.app/api/complaints', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
