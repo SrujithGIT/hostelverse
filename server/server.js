@@ -13,7 +13,7 @@ app.use(cors(
     {
         origin : ["https://hostelverse-client.vercel.app"],
         methods:["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-        credentials=true
+        credentials:true
     }
 ));
 app.use(express.json());
