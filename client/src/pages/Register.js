@@ -46,8 +46,7 @@ function Register() {
     });
 
     try {
-      const response = await fetch('https://hostelverse-server.vercel.app/api/register
-', {
+      const response = await fetch('https://hostelverse-server.vercel.app/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
